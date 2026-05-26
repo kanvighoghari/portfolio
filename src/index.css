@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0D1117;
+  --color-foreground: #F8FAFC;
+  
+  --color-primary: #8B5CF6;
+  --color-primary-foreground: #FFFFFF;
+  
+  --color-secondary: #38BDF8;
+  --color-secondary-foreground: #000000;
+  
+  --color-muted: #1E293B;
+  --color-muted-foreground: #94A3B8;
+
+  --color-border: rgba(255, 255, 255, 0.1);
+
+  --font-sora: 'Sora', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Custom Glows */
+  --drop-shadow-glow-purple: 0 0 20px rgba(139, 92, 246, 0.5);
+  --drop-shadow-glow-cyan: 0 0 20px rgba(56, 189, 248, 0.5);
+}
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-inter);
+    /* Subtle grid pattern */
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl;
+  }
+  
+  .glow-text-purple {
+    text-shadow: 0 0 20px rgba(139, 92, 246, 0.8);
+  }
+
+  .glow-text-cyan {
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.8);
+  }
+
+  .bg-glow-purple {
+    box-shadow: 0 0 40px -10px rgba(139, 92, 246, 0.5);
+  }
+
+  .bg-glow-cyan {
+    box-shadow: 0 0 40px -10px rgba(56, 189, 248, 0.5);
+  }
+}
