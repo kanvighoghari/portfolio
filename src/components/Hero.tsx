@@ -46,7 +46,7 @@ export default function Hero() {
           </div>
           
           <p className="text-gray-400 font-inter max-w-lg leading-relaxed text-lg">
-            Second-year IT undergraduate specializing in the MERN stack and real-world AI integration. Crafting seamless digital experiences.
+          Full-stack developer crafting AI-powered web applications with MERN, real-time technologies, and modern user experiences.
           </p>
           
           <div className="flex flex-wrap gap-4 mt-4">
@@ -55,8 +55,8 @@ export default function Hero() {
             </Button>
             <Button variant="glowCyanOutline" size="lg" className="rounded-full px-8 bg-transparent">
                <a
-                  href="/KanviGhoghari_Resume.pdf"
-                  download="KanviGhoghari_Resume.pdf"
+                  href="/KanviGhoghari_resume.pdf"
+                  download="KanviGhoghari_resume.pdf"
                 >
                   Download Resume
                 </a>
