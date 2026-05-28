@@ -55,8 +55,8 @@ export default function Hero() {
             </Button>
             <Button variant="glowCyanOutline" size="lg" className="rounded-full px-8 bg-transparent">
                <a
-                  href="/KanviGhoghari_resume.pdf"
-                  download="KanviGhoghari_resume.pdf"
+                  href="/KanviGhoghari_Resume.pdf"
+                  download="KanviGhoghari_Resume.pdf"
                 >
                   Download Resume
                 </a>
